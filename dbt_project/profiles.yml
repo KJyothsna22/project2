@@ -1,0 +1,26 @@
+retail_warehouse_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../warehouse/retail_platform.duckdb'
+      threads: 4
+    postgres_dev:
+      type: postgres
+      host: "{{ env_var('PG_HOST', 'localhost') }}"
+      user: "{{ env_var('PG_USER', 'postgres') }}"
+      pass: "{{ env_var('PG_PASSWORD', 'postgres') }}"
+      port: "{{ env_var('PG_PORT', 5432) | as_number }}"
+      dbname: "{{ env_var('PG_DATABASE', 'retail_warehouse') }}"
+      schema: retail_dw
+      threads: 4
+    snowflake_prod:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', 'xy12345.us-east-1') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', 'analytics_svc') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', '***') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+      database: RETAIL_DW
+      warehouse: ANALYTICS_WH
+      schema: ANALYTICS
+      threads: 8

@@ -1,0 +1,5 @@
+[2026-08-15 22:53:22] [INFO] [data_generator:generate_full_m5_dataset:212] - Generating realistic Walmart M5 dataset for 6 stores over 730 days...
+[2026-08-15 22:53:22] [INFO] [data_generator:generate_full_m5_dataset:217] - Generated calendar dataset: 730 days saved to 'C:\Users\Srihari\Desktop\project2\data\raw\calendar.csv'.
+[2026-08-15 22:53:23] [INFO] [data_generator:generate_full_m5_dataset:223] - Generated prices dataset: 17640 records saved to 'C:\Users\Srihari\Desktop\project2\data\raw\sell_prices.csv'.
+[2026-08-15 22:53:24] [INFO] [data_generator:generate_full_m5_dataset:228] - Generated sales dataset: 168 item-store series saved to 'C:\Users\Srihari\Desktop\project2\data\raw\sales_train_validation.csv'.
+[2026-08-15 22:53:24] [INFO] [data_generator:generate_full_m5_dataset:230] - M5 Dataset generation complete.

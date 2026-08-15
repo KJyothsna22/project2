@@ -1,0 +1,81 @@
+{
+  "execution_timestamp": "2026-08-15T22:53:27.424790",
+  "total_checks": 9,
+  "passed_checks": 8,
+  "failed_checks": 0,
+  "info_checks": 1,
+  "checks": [
+    {
+      "dataset": "calendar",
+      "check": "Missing Key Records",
+      "status": "PASSED",
+      "total_records": 730,
+      "failed_records": 0,
+      "details": "Null counts per column: {'date_str': 0, 'wm_yr_wk': 0, 'wday': 0}"
+    },
+    {
+      "dataset": "calendar",
+      "check": "Duplicate Key Records",
+      "status": "PASSED",
+      "total_records": 730,
+      "failed_records": 0,
+      "details": "Duplicates on ['date_str']: 0"
+    },
+    {
+      "dataset": "calendar",
+      "check": "Date Continuity & Completeness",
+      "status": "PASSED",
+      "total_records": 730,
+      "failed_records": 0,
+      "details": "Date span 2022-01-01 to 2023-12-31, missing days: 0"
+    },
+    {
+      "dataset": "sell_prices",
+      "check": "Missing Key Records",
+      "status": "PASSED",
+      "total_records": 17640,
+      "failed_records": 0,
+      "details": "Null counts per column: {'store_id': 0, 'item_id': 0, 'wm_yr_wk': 0, 'sell_price': 0}"
+    },
+    {
+      "dataset": "sell_prices",
+      "check": "Duplicate Key Records",
+      "status": "PASSED",
+      "total_records": 17640,
+      "failed_records": 0,
+      "details": "Duplicates on ['store_id', 'item_id', 'wm_yr_wk']: 0"
+    },
+    {
+      "dataset": "sell_prices",
+      "check": "Pricing Integrity",
+      "status": "PASSED",
+      "total_records": 17640,
+      "failed_records": 0,
+      "details": "Records with price <= 0 or > $1000: 0"
+    },
+    {
+      "dataset": "sales",
+      "check": "Missing Key Records",
+      "status": "PASSED",
+      "total_records": 122640,
+      "failed_records": 0,
+      "details": "Null counts per column: {'item_id': 0, 'store_id': 0, 'date_str': 0, 'sales_units': 0}"
+    },
+    {
+      "dataset": "sales",
+      "check": "Duplicate Key Records",
+      "status": "PASSED",
+      "total_records": 122640,
+      "failed_records": 0,
+      "details": "Duplicates on ['item_id', 'store_id', 'date_str']: 0"
+    },
+    {
+      "dataset": "sales",
+      "check": "Sales Outlier Detection",
+      "status": "INFO",
+      "total_records": 122640,
+      "failed_records": 8,
+      "details": "Sales units > 61.0 (8 high spikes flagged for awareness)"
+    }
+  ]
+}
