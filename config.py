@@ -72,17 +72,17 @@ STOCKOUT_PENALTY_MULTIPLIER = 1.5
 # Role-Based Authentication
 DEFAULT_USERS = {
     "admin": {
-        "password_hash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",  # admin123
+        "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",  # admin123
         "role": "Admin",
         "name": "Sarah Connor (VP of Supply Chain)"
     },
     "manager": {
-        "password_hash": "6cf615d5bcaac778352a8f1f3360d23f02f34ec182e25989780bf2fb91bd9350",  # manager123
+        "password_hash": "866485796cfa8d7c0cf7111640205b83076433547577511d81f8030ae99ecea5",  # manager123
         "role": "Inventory Manager",
         "name": "David Miller (Lead Inventory Planner)"
     },
     "viewer": {
-        "password_hash": "f6e0a1e2ac41945a9aa7ff8a8aaa0cebc12a3bcc981a57b4873c68da0abb64ca",  # viewer123
+        "password_hash": "65375049b9e4d7cad6c9ba286fdeb9394b28135a3e84136404cfccfdcc438894",  # viewer123
         "role": "Viewer",
         "name": "Alex Wong (Operations Analyst)"
     }

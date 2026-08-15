@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and big data binaries
+*.db
+*.duckdb
+*.sqlite
+data/processed/*.parquet
+*.log
+logs/*.log
+
+# Environment
+.env
+venv/
+env/
+.venv/
